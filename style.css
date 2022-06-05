@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.screen{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(231, 231, 231);
+}
+
+.screen h1{
+    font-size: 90px;
+}
+
+.screen h2{
+    font-size: 40px;
+}
+
+.box-con{
+    display: grid;
+    grid-template-columns: 130px 130px 130px 130px;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box{
+    height: 130px;
+    background-color:lightslategrey;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40PX;
+    font-weight: 400;
+}
+
+.box:active{
+    background-color: rgb(81, 88, 95);
+}
+
+.red{
+    background-color: red;
+}
+
+.none{
+    display: none;
+    visibility: hidden;
+}
+
+.win-screen{
+    text-align: center;
+}
+
+.win-screen button{
+    border: none;
+    background-color: lightslategrey;
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.win-screen button:hover{
+    transform: scale(1.04);
+}
+
+.win-screen button:active{
+    background-color: rgb(81, 88, 95);
+}
+
+@media (max-width: 615px) {
+
+    .screen h1{
+        font-size: 70px;
+    }
+    
+    .screen h2{
+        font-size: 23px;
+    }
+
+    .box-con{
+        grid-template-columns: 100px 100px 100px 100px;
+    }
+    
+    .box{
+        height: 100px;
+    }
+
+
+}
+
+
+@media (max-width: 485px) {
+
+        .screen h1{
+            font-size: 70px;
+        }
+        
+        .screen h2{
+            font-size: 23px;
+        }
+    
+    
+        .box-con{
+            grid-template-columns: 70px 70px 70px 70px;
+        }
+        
+        .box{
+            height: 70px;
+        }
+}
+
+@media (max-width: 385px) {
+    .screen h1{
+        font-size: 60px;
+    }
+    
+    .screen h2{
+        font-size: 20px;
+    }
+
+    .box-con{
+        grid-template-columns: 65px 65px 65px 65px;
+    }
+    
+    .box{
+        height: 60px;
+    }
+}
